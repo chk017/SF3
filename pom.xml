@@ -54,6 +54,20 @@
  </arguments>
 </configuration>
  </execution>
+
+  <execution>
+ <phase>package</phase>
+ <goals>
+ <goal>exec</goal>
+ </goals>
+ <configuration>
+ <executable>cmd</executable>
+ <arguments>
+ <argument>/c</argument>
+ <argument>src\\main\\resources\\scripts\\install-jars.bat</argument>
+ </arguments>
+</configuration>
+ </execution>
  </executions>
 </plugin>
 
