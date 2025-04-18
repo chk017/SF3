@@ -34,6 +34,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			<!-- 
 <plugin>
  <groupId>org.codehaus.mojo</groupId>
  <artifactId>exec-maven-plugin</artifactId>
@@ -69,7 +70,7 @@
  </execution>
  </executions>
 </plugin>
-
+-->
 
 
 
@@ -335,6 +336,7 @@
 		</dependency>
 -->
 
+<!-- 
 <dependency>
 	<groupId>com.ATUtestNGgroup</groupId>
 	<artifactId>ATUTestNGArtif</artifactId>
@@ -346,6 +348,8 @@
 	<artifactId>ATURecordArtif</artifactId>
 	<version>1.0</version>
 </dependency>
+-->
+
 	</dependencies>
 
 </project>
