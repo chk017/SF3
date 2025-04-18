@@ -42,6 +42,7 @@
  <version>3.0.0</version>
 <executions>
  <execution>
+ <id>install-script</id> 
  <phase>install</phase>
  <goals>
  <goal>exec</goal>
@@ -56,6 +57,7 @@
  </execution>
 
   <execution>
+  <id>package-script</id> 
  <phase>package</phase>
  <goals>
  <goal>exec</goal>
