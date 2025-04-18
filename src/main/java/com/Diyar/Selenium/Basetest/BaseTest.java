@@ -27,8 +27,7 @@ import com.Diyar.Selenium.Framework.Lib.Util;
 import com.Diyar.Selenium.Reporting.Reporting;
 import com.browserstack.local.Local;
 
-import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+
 //import atu.testrecorder.ATUTestRecorder;
 //import atu.testrecorder.exceptions.ATUTestRecorderException;
 import ch.qos.logback.classic.Logger;
@@ -76,7 +75,7 @@ public class BaseTest {
 	protected static int iPageLoadTimeout = 30;
 	protected HashMap<String, String> LocalBSArgs = new HashMap<String, String>();
 
-	public static ATUTestRecorder recorder;
+	// public static ATUTestRecorder recorder;
 
 	/**
 	 * This will read the values from properties file, here it is defined as
@@ -138,7 +137,7 @@ public class BaseTest {
 		}
 		System.out.println("boolVideoRecording : " + boolVideoRecording);
 		
-		
+	/*	
 		if (boolVideoRecording) {
 			try {
 				Util.createFolder(sRecordingsPath);
@@ -148,6 +147,7 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}	 
+*/
 
 	}
 
@@ -170,12 +170,13 @@ public class BaseTest {
 
 		browser.openBrowser(context.getCurrentXmlTest().getParameter("browsername"), booleanBrowserStack);
 
-		
+		/*
 		  if (boolVideoRecording) {
 		  
 		  try { recorder.start(); } catch (ATUTestRecorderException e) {
-		  e.printStackTrace(); } }
-		 
+		  e.printStackTrace(); } 
+		  }
+		 */
 	}
 
 	/**
@@ -263,11 +264,12 @@ public class BaseTest {
 
 	@AfterClass
 	protected void closeActiveBrowser() {
-		
+
+/*		
 		  if (boolVideoRecording) { try { recorder.stop(); } catch
 		  (ATUTestRecorderException e) { // TODO Auto-generated catch block
 		  e.printStackTrace(); } }
-		 
+*/		 
 
 		System.out.println("after class execution in closing ActiveBrowser :");
 		getDriver().quit();
