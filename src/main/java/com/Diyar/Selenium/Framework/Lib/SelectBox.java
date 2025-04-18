@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class SelectBox extends Select {
+   /*
    private static String locator = null;
    private static Browser browser = new Browser();
 
@@ -29,6 +30,8 @@ public class SelectBox extends Select {
    public String locator() {
       return locator;
    }
+
+   */
 }
 
 
